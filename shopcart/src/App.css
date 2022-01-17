@@ -30,3 +30,9 @@ img {
   width: 100px;
   margin: 2em 3em;
 }
+.addSubBtns button {
+  background-color: gray;
+  width: 40px;
+  height: 35px;
+  margin: 10px;
+}
