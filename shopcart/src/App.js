@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/navBar";
 import { Home } from "./pages/Home";
 import { Cart } from "./pages/Cart";
+import { Signin } from "./pages/Signin";
 import "./App.css";
 
 export const App = () => {
@@ -33,6 +34,10 @@ export const App = () => {
           <Route
             path="/Cart"
             element={<Cart cart={cart} />}
+          />
+          <Route
+            path="/Signin"
+            element={<Signin />}
           />
         </Routes>
       </Router>

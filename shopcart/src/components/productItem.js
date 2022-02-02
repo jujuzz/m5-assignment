@@ -71,6 +71,19 @@ const ProductInfo = ({
 }) => {
   return (
     <>
+      <div id="sorting" class="center-screen">
+        <p>Sort Price By: 
+          <span class="sort-button">
+            <select
+              name="sort"
+              onChange={(e) => product.onSort(product, e.target.value)}>
+              <option value="normal">Normal</option>
+              <option value="lowest">Lowest</option>
+              <option value="highest">Highest</option>
+            </select>
+          </span>
+        </p>
+      </div>
       <div>{product.desc}</div>
       <img
         onClick={() => handleShowModal(product)}
@@ -88,6 +101,7 @@ const ProductInfo = ({
           value={quantity}
           disabled
         />
+        <div style={{ marginTop: "8px", color: "red"}} >price:${product.value}</div>
       </div>
     </>
   );
